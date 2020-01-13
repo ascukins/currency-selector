@@ -18,7 +18,36 @@
 label.checkbox {
   display: inline-block !important;
   width: 100%;
-  padding: 4px 0;
+  padding: 2px 0 4px;
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    height: 16px;
+    width: 15px;
+    position: relative;
+    top: 3px;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  input:checked + span::before {
+    content: "X";
+    display: block;
+    color: #eb3323;
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  span {
+    padding-left: 2px;
+  }
 }
 
 .checked {
