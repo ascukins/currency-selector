@@ -1,0 +1,30 @@
+.checkbox-container {
+  position: relative;
+  background-color: #ececec;
+  border: 1px solid #a3a3a3;
+  color: #1e436e;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.checkbox-container:hover {
+  background-color: #dcdcdc;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+label.checkbox {
+  display: inline-block !important;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.checked {
+  background-color: white;
+}
+
+.checked:hover {
+  background-color: white;
+}

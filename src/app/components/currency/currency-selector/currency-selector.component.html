@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="tiles">
+    <app-currency-tile
+      *ngFor="let currency of selectedCurrencies"
+      [text]="currency"
+      (currencyAction)="onCurrencyAction($event)"
+    ></app-currency-tile>
+  </div>
+  <div class="checkboxes">
+    <app-currency-checkbox
+      *ngFor="let currency of currenciesToSelect"
+      [text]="currency"
+      (currencyAction)="onCurrencyAction($event)"
+      [checked]="selectedCurrencies.includes(currency)"
+    ></app-currency-checkbox>
+  </div>
+</div>

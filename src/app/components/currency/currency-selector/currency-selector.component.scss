@@ -1,0 +1,28 @@
+.container {
+  width: 420px;
+  margin: auto;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+// TODO: If Internet Explorer needs to be supported, CSS grid might need refactoring
+
+.tiles {
+  width: 100%;
+  padding-bottom: 32px;
+  padding-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+}
+
+.checkboxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+}

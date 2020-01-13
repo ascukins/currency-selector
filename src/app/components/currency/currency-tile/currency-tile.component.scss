@@ -1,0 +1,37 @@
+//TODO: Could be improved by defining variables for colors
+
+.tile-container {
+  position: relative;
+}
+
+.tile {
+  background-color: #e5e5e5;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  width: 127px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.close-icon {
+  text-align: center;
+  color: white;
+  background-color: #333333;
+  position: absolute;
+  right: -1px;
+  top: -8px;
+  border: 2px solid white;
+  width: 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 1px 0;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  background-color: white;
+  color: #333333;
+  border-color: #333333;
+  font-weight: bold;
+}

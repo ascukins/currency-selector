@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataStoreService } from './services/data-store.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(public dataStoreService: DataStoreService) { }
   title = 'currency-selector';
 }

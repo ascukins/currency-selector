@@ -1,0 +1,11 @@
+<div class="checkbox-container" [class.checked]="checked">
+  <label class="checkbox pointer">
+    <input
+      type="checkbox"
+      class="pointer"
+      [checked]="checked"
+      (change)="onCheckboxChange($event)"
+    />
+    <span>{{ text }}</span>
+  </label>
+</div>
