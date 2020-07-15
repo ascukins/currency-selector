@@ -5,10 +5,10 @@
   color: #1e436e;
   font-size: 20px;
   cursor: pointer;
-}
 
-.checkbox-container:hover {
-  background-color: #dcdcdc;
+  &:hover {
+    background-color: #dcdcdc;  
+  }
 }
 
 .pointer {
@@ -34,17 +34,18 @@ label.checkbox {
     border-radius: 3px;
     outline: none;
     margin-left: 4px;
-  }
 
-  input:checked + span::before {
-    content: "X";
-    display: block;
-    color: #eb3323;
-    position: absolute;
-    left: 7px;
-    top: 8px;
-    font-size: 13px;
-    font-weight: bold;
+    &:checked + span::before {
+      content: "X";
+      display: block;
+      color: #eb3323;
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
   }
   span {
     padding-left: 2px;
@@ -53,8 +54,7 @@ label.checkbox {
 
 .checked {
   background-color: white;
-}
-
-.checked:hover {
-  background-color: white;
+  &:hover {
+    background-color: white;
+  }  
 }
